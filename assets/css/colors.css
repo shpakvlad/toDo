@@ -1,0 +1,18 @@
+:root {
+    --bg-color: #2E343B;
+    --input-bg-color: #333a42;
+    --font-color: #9F7DEA;
+    --text-color: #7B8499;
+ 
+    --mybtn-color: #9F7DEA;
+    --light-color: #292f35;
+    --dark-color: #333941;
+    
+    --h1-light-color: #16191C;
+    --h1-dark-color: #464E59;  
+
+    --red: #fe688b;
+    --green: #2aa889;
+    --yellow: #ffb84d;
+    --blue: #5c74f0;
+}

@@ -1,0 +1,163 @@
+/************************************************/
+/*                    BASIC                     */
+/************************************************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: var(--bg-color);
+    color: var(--font-color);
+}
+
+/************************************************/
+/*                   REUSABLE                   */
+/************************************************/
+.wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.box-shadow {
+    box-shadow: -4px -4px 7px 0px #333941, 4px 4px 7px 0px #292f35,
+        inset 0px 0px 0px 0px #333941, inset 0px 0px 0px 0px #292f35; 
+}
+
+.hover {
+    &:hover {
+        box-shadow: inset 0px 0px 0px 0px #292f35, 0px 0px 0px 0px #333941,
+        inset 4px 4px 7px 0px #292f35, -4px -4px 7px 0px #333941;
+        transition: box-shadow 1.5s ease-in-out;
+    }
+}
+
+.record {
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    background-color: var(--bg-color);
+    border-radius: 5px;
+    letter-spacing: 1px; 
+
+}
+
+h2 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    text-shadow: -3px -3px 6px var(--h1-dark-color),
+    3px 3px 6px var(--h1-light-color);
+}
+
+/************************************************/
+/*                    HEADER                    */
+/************************************************/
+header h1 {
+    width: 100%;
+    margin: 30px 0;
+    text-align: center;
+    font: 40px "Calibri";
+    text-shadow: -3px -3px 6px var(--h1-dark-color),
+        3px 3px 6px var(--h1-light-color);
+}
+
+/************************************************/
+/*                    INPUT                     */
+/************************************************/
+#input-box {
+    max-width: 700px;
+    padding: 10px 2%;
+    margin: 0 auto;
+    background-color: var(--bg-color);
+    display: flex;
+    border-radius: 5px;
+    
+    &:focus {
+        outline: none;
+        border: 2px solid var(--font-color);
+    }
+}
+
+/* ===== input ===== */
+#todos {   
+    width: 100%;
+    margin-right: 10px;
+    padding: 0 10px;
+    background-color: var(--input-bg-color);
+    border: none;
+    color: var(--font-color);
+    font-size: 20px;
+    border-radius: 2px;
+}
+
+#add-btn,
+.remove-btn {
+    margin-left: auto;
+    padding: 8px 16px;
+    border-radius: 200px;
+    background-color: var(--bg-color);
+    color: var(--font-color);
+    border: none;
+    text-transform: uppercase;
+}
+
+.remove-btn {
+    font-size: 7px;
+    padding: 3px 6px;
+}
+
+/************************************************/
+/*                    LISTS                     */
+/************************************************/
+.lists {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#todo-list {
+    margin: 0 auto;
+    height: 200px;
+}
+
+.todo-list-header,
+.done-list-header {
+    width: 70%;
+}
+
+#done-list {
+    margin: 0 auto;
+}
+
+.remove-btn {
+    margin-left: auto;
+}
+
+.doneChk {
+    margin-right: 10px;
+}
+
+#empty-todo-list-msg,
+#empty-done-list-msg {
+    width: 100%;
+    margin-top: 50px;
+    text-align: center;
+}
+
+
+/************************************************/
+/*                     DONE                     */
+/************************************************/
+.done {
+    background-color: var(--input-bg-color) ;
+}
+.done p {
+    text-decoration: line-through;
+    color: var(--text-color);
+}
+
+/* ===== END ===== */
