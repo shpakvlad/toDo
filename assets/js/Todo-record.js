@@ -1,4 +1,4 @@
-const Statuses = { ACTIVE: "active", DONE: "done" };
+const Statuses = { ACTIVE: 'active', DONE: 'done', EXPIRED: 'expired'};
 
 class ToDoRecord {
     status = "unknown";
@@ -6,8 +6,10 @@ class ToDoRecord {
         this.setText(text);
         this.setStatus(Statuses.ACTIVE);
         this.id = this._getRandomId();
+        this.setColor('none');
     }
 
+    
     setText(text) {
         this.text = text;
     }
@@ -20,6 +22,21 @@ class ToDoRecord {
     }
     getStatus() {
         return this.status;
+    }
+
+    setColor(color) {
+        this.color = color;
+    }
+    getColor() {
+        return this.color;
+    }
+
+    setId(id) {
+        this.id = id;
+    }
+
+    getId() {
+        return this.id;
     }
 
     _getRandomId() {
