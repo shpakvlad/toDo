@@ -36,16 +36,16 @@ function addRecord() {
     // let text = document.querySelector("#todos");
 
     if (recordText != '') {
-        const rec = new ToDoRecord(recordText.value);
+        const rec = new TodoRecord(recordText.value);
         taskArray.push(rec);
 
         msg(taskArray); //FIXME:remove
 
-        let newTask = appendTask(rec.getText());
+        let newTask = appendTask(rec.text);
         newTask.setAttribute("data-id", rec.id); //add id
         newTask.style.borderLeftColor = inputBox.style.borderLeftColor;    
 
-        let recColor = rec.getId();
+        let recColor = rec.id;
         changeColorInArray(recColor,inputBox.style.borderLeftColor );
 
         inputBox.style.borderLeftColor = 'transparent';
@@ -103,7 +103,6 @@ function doneRecord(event) {
     }
 }
 
-
 function removeRecord() {
     this.parentElement.remove();
     removeRecordFromArray(this.parentElement.dataset.id);
@@ -120,7 +119,7 @@ function changeColorInArray(findId, color) {
     let foundObj = taskArray.find((item) => {
         return item.id === findId;
     });
-    foundObj.setColor(color);
+    foundObj.color = color;
 
     msg(todoList);
 }
@@ -154,3 +153,5 @@ function colorSelect(event) {
             break;
     }
 }
+
+/* ===== END ===== */
