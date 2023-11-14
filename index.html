@@ -7,6 +7,14 @@
 
         <link rel="stylesheet" href="./assets/css/colors.css" />
         <link rel="stylesheet" href="./assets/css/main.css" />
+        <link rel="stylesheet" href="./assets/css/vendors/ionicons.min.css" />
+        <script
+        defer
+        src="https://unpkg.com/ionicons@4.5.5/dist/ionicons/ionicons.dy5iahpg.js"
+        data-resources-url="https://unpkg.com/ionicons@4.5.5/dist/ionicons/"
+        data-namespace="ionicons"
+    ></script>
+    
     </head>
     <body>
         <header>
@@ -16,12 +24,9 @@
             <div class="wrapper">
                 <div id="input-box" class="box-shadow">
                     <input id="todos" type="text" name="todos" />
-                    <input
-                        id="add-btn"
-                        class="box-shadow hover"
-                        type="button"
-                        value="Add"
-                    />
+
+                    <ion-icon id="add-btn"
+                    class="box-shadow hover" name="add"></ion-icon>
                 </div>
 
                 <div id="color-box">
@@ -30,7 +35,6 @@
                     <div class="color-img" id="color-green"></div>
                     <div class="color-img" id="color-yellow"></div>
                     <div class="color-img" id="color-blue"></div>
-
                 </div>
 
             </div>

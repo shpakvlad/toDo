@@ -56,6 +56,11 @@ h2 {
     3px 3px 6px var(--h1-light-color);
 }
 
+ion-icon {
+    width: 20px;
+    height: 20px;
+}
+
 /************************************************/
 /*                    HEADER                    */
 /************************************************/
@@ -98,8 +103,8 @@ header h1 {
 }
 
 #add-btn,
-.remove-btn {
-    margin-left: auto;
+.remove-btn,
+.edit-btn {
     padding: 8px 16px;
     border-radius: 200px;
     background-color: var(--bg-color);
@@ -112,10 +117,19 @@ header h1 {
     color: var(--yellow);
 }
 
-.remove-btn {
-    font-size: 7px;
-    padding: 3px 6px;
+.remove-btn,
+.edit-btn {
+    padding: 5px 10px;
     color: var(--red);
+}
+
+.edit-btn {
+    margin-right: 15px;
+    color: var(--green);
+}
+
+.btn-block {
+    margin-left: auto;
 }
 
 /************************************************/
